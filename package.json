@@ -1,0 +1,31 @@
+{
+  "name": "reactapplication",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anjalipandey868/reactapplication.git"
+  },
+  "author": "anjali pandey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anjalipandey868/reactapplication/issues"
+  },
+  "homepage": "https://github.com/anjalipandey868/reactapplication#readme",
+  "description": "",
+  "devDependencies": {
+    "parcel": "^2.13.3",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "browserlist": {
+    "development": [
+      "last 2 chrome version"
+    ]
+  }
+}
