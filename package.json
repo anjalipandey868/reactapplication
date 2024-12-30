@@ -2,7 +2,8 @@
   "name": "reactapplication",
   "version": "1.0.0",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "parcel index.html"
   },
   "repository": {
     "type": "git",
