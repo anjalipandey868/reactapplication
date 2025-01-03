@@ -53,3 +53,18 @@
     background-color: burlywood;
     cursor: pointer;
 }
+
+.login-btn{
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+    background-color: burlywood;
+    cursor: pointer;
+}
+
+.filter{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 10px;
+}

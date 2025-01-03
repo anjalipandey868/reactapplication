@@ -1,5 +1,10 @@
-
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { useEffect, useState } from "react";
 const Header = () => {
+
+    const [btnname , setbtnname] = useState("Login")
+
     return (
         <div className="header">
             <div className="logo">
@@ -11,6 +16,10 @@ const Header = () => {
                     <li>About</li>
                     <li>Contact</li>
                     <li>Cart</li>
+                    <button className="login-btn" 
+                    onClick={()=>{btnname === "login"? setbtnname("logout"):setbtnname("login")}}>
+                    {btnname}
+                    </button>
              </ul>
             </div>
         </div>

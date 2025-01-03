@@ -1,21 +1,21 @@
 //props destructuring ( cleaning the code)
-import resData from "../utils/mockData";
 const RestaurantCard = (props) => {
     const {resData} = props;
-const {name, cuisine, averageRating, costForTwo, deliveryTime, img} = resData;
+    const baseURL = "https://media-assets.swiggy.com/swiggy/image/upload/"
+//const {name, cuisine, averageRating, costForTwo, deliveryTime, img} = resData;
     return (
         <div className="res-card">
             
             <img 
             className="res-img"
             alt = "restaurant"
-            src={img}>
+            src={baseURL.concat(resData.info.cloudinaryImageId)}>
             </img>
-            <h3>{name}</h3>
-            <h4>{cuisine}</h4>
-            <h4>{averageRating}</h4>
-            <h4>Cost for Two{costForTwo}</h4>
-            <h4>{deliveryTime}</h4>
+            <h3>{resData.info.name}</h3>
+            <h4>{resData.info.avgRating}</h4>
+            <h4>{resData.info.cuisines.join(" ,")}</h4>
+            <h4>{resData.info.costForTwo}</h4>
+            <h4>{resData.info.sla.deliveryTime}min</h4>
             
         </div>
     )
